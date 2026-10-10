@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heat Map – Couples Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SETUP SCREEN -->
+  <div id="setup-screen" class="screen">
+    <h1>Heat Map</h1>
+    <p class="subtitle">Choose your names</p>
+
+    <div class="name-inputs">
+      <div>
+        <label>Player 1</label>
+        <input type="text" id="player1-name" placeholder="Name..." maxlength="12" />
+      </div>
+      <div>
+        <label>Player 2</label>
+        <input type="text" id="player2-name" placeholder="Name..." maxlength="12" />
+      </div>
+    </div>
+
+    <button id="start-btn" class="primary-btn">Start Game</button>
+  </div>
+
+  <!-- MAIN GAME SCREEN -->
+  <div id="game-screen" class="screen hidden">
+    <header>
+      <div class="players">
+        <div class="player-heat" id="p1-block">
+          <span id="p1-display">Player 1</span>
+          <span class="heat-badge" id="p1-heat">1</span>
+        </div>
+        <span class="vs">×</span>
+        <div class="player-heat" id="p2-block">
+          <span id="p2-display">Player 2</span>
+          <span class="heat-badge" id="p2-heat">1</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- TURN INDICATOR -->
+    <div id="turn-indicator" class="turn-indicator"></div>
+
+    <!-- BODY PART SELECTION -->
+    <div id="select-phase">
+      <h2>Choose a body part</h2>
+      <p class="hint">The other player will pick which challenge you receive</p>
+      <div id="body-parts-grid" class="grid"></div>
+    </div>
+
+    <!-- CHALLENGE CHOICE -->
+    <div id="choice-phase" class="hidden">
+      <h2 id="choice-title">Choose a challenge</h2>
+      <div id="challenge-options" class="options"></div>
+    </div>
+
+    <!-- ACTIVE CHALLENGE -->
+    <div id="active-phase" class="hidden">
+      <div class="active-card">
+        <div class="for-label" id="for-label"></div>
+        <p id="active-challenge-text"></p>
+      </div>
+      <div class="action-buttons">
+        <button id="complete-btn" class="primary-btn">Completed (+1 Heat)</button>
+        <button id="skip-btn" class="secondary-btn">Skip (−1 Heat)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="challenges.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

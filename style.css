@@ -1,0 +1,269 @@
+:root {
+  --bg: #0f0a0c;
+  --card: #1c1216;
+  --accent: #e83e6d;
+  --accent-soft: #ff6b9d;
+  --text: #f8e9ee;
+  --muted: #b89aa5;
+  --danger: #f87171;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.screen {
+  width: 100%;
+  max-width: 480px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ===== SETUP ===== */
+#setup-screen {
+  text-align: center;
+  padding-top: 60px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #ff6b9d, #e83e6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+.name-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.name-inputs label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.name-inputs input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #3a2a30;
+  background: var(--card);
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.name-inputs input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ===== BUTTONS ===== */
+.primary-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.15s;
+}
+
+.primary-btn:active {
+  transform: scale(0.97);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--danger);
+  border: 1px solid var(--danger);
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* ===== HEADER ===== */
+header {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #2a1c22;
+}
+
+.players {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+
+.player-heat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+.player-heat.active-turn {
+  background: #2a1a22;
+}
+
+.heat-badge {
+  background: #2a1a22;
+  color: #f9a8d4;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  min-width: 32px;
+  text-align: center;
+}
+
+.heat-badge.heat-low  { background: #3b1c2e; color: #f9a8d4; }
+.heat-badge.heat-mid  { background: #4a1528; color: #fb7185; }
+.heat-badge.heat-high { background: #5c0a1f; color: #e11d48; }
+
+.vs {
+  opacity: 0.4;
+  font-size: 1.1rem;
+}
+
+/* ===== TURN INDICATOR ===== */
+.turn-indicator {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--accent-soft);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+/* ===== BODY PART GRID ===== */
+#select-phase h2 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.part-btn {
+  background: var(--card);
+  border: 1px solid #3a2a30;
+  color: var(--text);
+  padding: 18px 12px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.part-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: #2a1a22;
+}
+
+.part-btn.used {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ===== CHALLENGE CHOICE ===== */
+#choice-phase h2 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.challenge-card {
+  background: var(--card);
+  border: 1px solid #3a2a30;
+  color: var(--text);
+  padding: 20px;
+  border-radius: 16px;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.challenge-card:hover {
+  border-color: var(--accent);
+  background: #2a1a22;
+}
+
+/* ===== ACTIVE CHALLENGE ===== */
+.active-card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 28px 24px;
+  margin-bottom: 24px;
+  border: 1px solid #3a2a30;
+}
+
+.for-label {
+  font-size: 0.85rem;
+  color: var(--accent-soft);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#active-challenge-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+}
