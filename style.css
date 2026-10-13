@@ -24,6 +24,7 @@ body {
   padding: 20px;
 }
 
+/* ===== SCREENS ===== */
 .screen {
   width: 100%;
   max-width: 480px;
@@ -31,6 +32,15 @@ body {
 
 .hidden {
   display: none !important;
+}
+
+/* Force game screen to start hidden */
+#game-screen {
+  display: none;
+}
+
+#game-screen:not(.hidden) {
+  display: block;
 }
 
 /* ===== SETUP ===== */
@@ -43,9 +53,6 @@ h1 {
   font-size: 2.8rem;
   letter-spacing: -1px;
   margin-bottom: 8px;
-  background: linear-gradient(135deg, #ff6b9d, #e83e6d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
@@ -146,11 +153,13 @@ header {
   background: #2a1a22;
   color: #f9a8d4;
   font-weight: 700;
-  font-size: 0.95rem;
-  padding: 4px 10px;
+  font-size: 0.85rem;
+  padding: 5px 12px;
   border-radius: 20px;
-  min-width: 32px;
   text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  min-width: auto;
 }
 
 .heat-badge.heat-low  { background: #3b1c2e; color: #f9a8d4; }
@@ -266,4 +275,24 @@ header {
 .action-buttons {
   display: flex;
   flex-direction: column;
+}
+
+/* ===== LOGO / TITLE ===== */
+.logo {
+  text-decoration: none;
+  background: linear-gradient(135deg, #ff6b9d, #e83e6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+.logo-header {
+  font-size: 1.6rem;
+  margin: 0 0 16px 0;
+  text-align: center;
 }

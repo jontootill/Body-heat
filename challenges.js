@@ -2,54 +2,38 @@ const challengeDatabase = {
     romantic: {
         neck_jawline: [
             "Slowly kiss a trail from their earlobe down to their collarbone.",
-            "Kiss the hollow of their throat softly.",
             "Place three soft, lingering kisses along their jawline.",
             "Give a gentle 60-second massage to the back of their neck.",
-            "Hold them close and brush your lips along their neck for 45 seconds.",
             "Trace slow, warm circles along their jawline with your fingertips for 30 seconds.",
             "Place soft, lingering kisses from one earlobe along the jaw to the other.",
-            "Cradle their neck gently and rest your forehead against theirs for 20 seconds."
         ],
         shoulders_upper_back: [
             "Give a relaxing 60-second shoulder and upper back massage.",
-            "Massage their shoulders with gentle pressure for 30 seconds.",
             "Undress to leave the shoulders bare and give a 45 second massage.",
-          "Give a soft 30-second back rub over their clothes.",
           "Kiss the space right between their shoulder blades.",
           "Wrap your arms around them from behind and kiss their shoulders.",
-          "Use long, smooth strokes down their shoulder blades for 45 seconds.",
           "Give a slow, warm shoulder massage for 40 seconds.",
             "Place soft kisses across the tops of both shoulders.",
-            "Rest your cheek against their upper back and hold them close.",
             "Trace gentle circles over their shoulder blades with your palms.",
-          "Wrap your arms around them from behind and squeeze their shoulders tenderly."
         ],
         arms_hands: [
           "Kiss each individual finger and thumb slowly and intentionally.",
           "Give a relaxing 60-second hand and arm massage.",
           "Kiss the palm and back of both of their hands.",
-            "Gently massage their hand and individual fingers.",
           "Trace a finger from their shoulder down to their fingertips.",
           "Hold both of their hands against your chest so they feel your heartbeat.",
           "Stroke their arms softly while looking into their eyes for 45 seconds.",
           "Interlace your fingers and hold their hand against your chest for 30 seconds.",
-        "Kiss the inside of their wrist and slowly up their forearm.",
-        "Trace soft circles on their palm with your thumb.",
-        "Stroke their arm from shoulder to fingertips with light fingertips.",
-        "Place a gentle kiss on each of their knuckles."
+        "Kiss the inside of their wrist and slowly up their forearm."
         ],
          lower_back_hips: [
-          "Hold their hips firmly and pull them into a tight embrace for 45 seconds.",
           "Place warm hands on their lower back and look into their eyes without speaking.",
           "Gently massage their lower hips and lumbar area for 60 seconds.",
           "Rest your hands on their hips and sway gently together for 30 seconds.",
           "Wrap your arms around their waist from behind and hold them close.",
-          "Give their hips a gentle squeeze while kissing their cheek.",
         "Trace slow, gentle circles over their lower back with your palms.",
         "Kiss the small of their back softly.",
-        "Undress to expose the lower back bare and give a 30 second massage.",
-        "Rest your forehead against their lower back while hugging their hips.",
-        "Stroke from their waist down over their hips with light hands."
+        "Undress to expose the lower back bare and give a 30 second massage."
         ],
         thighs_knees: [
             "Slowly stroke up from their knees to their mid-thigh for 45 seconds.",
@@ -57,66 +41,46 @@ const challengeDatabase = {
           "Rest your head on their lap while they stroke your hair.",
           "Kiss a path up from their knee to their upper thigh softly.",
           "Stroke the outer thighs slowly with both hands for 40 seconds.",
-        "Place soft kisses just above each knee.",
-        "Trace gentle patterns on their thighs with your fingertips."
+        "Place soft kisses just above each knee."
         ],
         feet_calves: [
             "Give a relaxing 60-second foot and ankle massage.",
             "Give a soft 30-second foot rub.",
           "Kiss the top of one foot gently.",
-          "Give a gentle foot massage for 40 seconds.",
         "Stroke their calves slowly from ankle to knee.",
           "Massage their calf muscles with relaxing oil or lotion for 1 minute."
         ],
         scalp_hair: [
         "Spend 60 seconds giving a deep, relaxing head and scalp massage.",
           "Brush or comb their hair with your fingers slowly for 45 seconds.",
-            "Run your fingers gently through their hair for 30 seconds.",
-          "Kiss their forehead softly and hold it there.",
         "Place soft kisses on their forehead and into their hairline.",
-        "Gently massage their scalp with your fingertips.",
         "Bury your face in their hair and breathe them in.",
-          "Give them a light, soothing 30-second scalp massage.",
           "Cradle the back of their head and stroke their hair while kissing their face.",
           "Rest their head in your lap and gently massage their temples and scalp."
         ],
-        chest_torso: [
+        chest: [
          "Trace light patterns across their chest with your fingers for 45 seconds.",
           "Kiss gently across their upper chest and sternum area.",
           "Place both hands on their chest and feel their heartbeat for 20 seconds.",
-        "Trace soft circles over their collarbones and upper chest.",
         "Give a relaxing 60-second chest massage.",
-          "Stroke their chest gently for 45 seconds.",
-            "Give a soft 30-second chest rub.",
-          "Kiss their chest softly and hold it there.",
-          "Give them a light, soothing 30-second torso massage.",
-        "Rest your cheek against their chest and hold them.",
         "Kiss gently down the center of their torso.",
         "Stroke their sides slowly from ribs to waist.",
-        "Rest your head on their chest and listen to their heart for 30 seconds.",
-          "Gently massage their torso with soft, rhythmic motions for 60 seconds."
+        "Rest your head on their chest and listen to their heart for 30 seconds."
         ],
         inner_thighs: [
-         "Give a gentle 30-second inner thigh massage.",
           "Place soft kisses high on the inner thighs.",
-          "Stroke the inner thighs slowly with light fingertips.",
           "Rest your hands warmly on their inner thighs while holding them.",
-        "Trace gentle patterns on the soft skin of their inner thighs.",
-          "Kiss the fabric of their clothes softly along their inner thigh.",
           "Kiss a path up their inner thigh, stopping safely away from the center.",
           "Slowly stroke up and down their inner thigh for 45 seconds.",
           "Give a relaxing 60-second inner thigh massage with steady pressure."
         ],
         intimate: [
          "Spend 60 seconds giving slow, deliberate hand stimulation to their core.",
-          "Take off their remaining clothes and gently massage their inner thighs and groin.",
-            "Gently rub their clothed groin area for 30 seconds while kissing their neck.",
+          "Gently rub their clothed groin area for 30 seconds while kissing their neck.",
           "Remove their underwear slowly, maintaining deep and loving eye contact.",
           "Cradle their intimate core warmly with your hand over their clothes.",
           "Give a slow, lingering kiss just below their pubic bone.",
           "Hold them close with one hand resting gently over their most private area for 20 seconds.",
-        "Place a soft kiss on their lower belly just above the intimate area.",
-        "Rest your forehead against theirs while your hand stays warm and still against them.",
           "Provide gentle, rhythmic touch to their genitals using only two fingers for 1 minute.",
           "Press your clothed core against theirs and grind for 45 seconds."
         ]
@@ -126,13 +90,8 @@ const challengeDatabase = {
           "Spend 60 seconds delivering slow kisses to their neck and jaw.",
           "Kiss and slowly suck along the full line of their jaw, pausing to nibble.",
         "Run your tongue from the base of their ear down the side of their neck in one long, wet stroke.",
-        "Nibble and suck the edge of their jaw while exhaling warm breath against their skin.",
-        "Trace the path from collarbone to jaw with open-mouthed, lingering kisses.",
         "Hold their head firmly and press deep, wet kisses into the hollow of their throat.",
           "Kiss along their jaw while gently pulling them closer by the waist.",
-          "Trace their neck with your tongue and blow softly on the damp skin.",
-          "Give 45 seconds of continuous, soft kisses from their chin to their neck.",
-          "Lightly nibble and suck on the sensitive skin under their jaw for 45 seconds.",
           "Guide their head back gently and explore their exposed neck with your tongue.",
           "Use a combination of soft touch and firm bites along their neck for 1 minute."
         ],
@@ -148,27 +107,15 @@ const challengeDatabase = {
         arms_hands: [
         "Take their fingers into your mouth one by one, teasing with your tongue for 60s.",
           "Kiss and lick both pulse points on their wrists for 45 seconds.",
-          "Suck gently on one of their fingers for 30 seconds.",
-          "Kiss and slowly suck each fingertip, then the center of their palm.",
-        "Nibble and suck the soft skin of their inner elbow.",
         "Trace their arm with open-mouthed kisses from wrist all the way to shoulder.",
         "Hold their hand and kiss the sensitive inside of their wrist while locking eyes and breathing on their skin.",
-          "Kiss the inside of their wrists where their pulse beats.",
-          "Run your fingernails lightly up and down their inner arms for 30 seconds.",
           "Pin their wrists gently above their head and kiss their inner arms.",
-          "Guide their hands over your body to show them exactly where you want touch."
+          "Guide their hands over your body to show them exactly where you want them to touch."
         ],
         lower_back_hips: [
             "Spend 60 seconds massaging their lower back and squeezing their hips.",
           "Pull their hips flush against yours and hold the contact for 45 seconds.",
-          "Use your tongue to trace along their hip bones line.",
           "Kiss and lick slowly along the full curve of their lower back.",
-        "Grip their hips and press open-mouthed, wet kisses into the small of their back.",
-        "Run your tongue just above the waistband, teasing the skin.",
-        "Nibble and suck the soft skin at the sides of their hips.",
-        "Massage their lower back while breathing hot air against the skin and kissing.",
-          "Kiss along the outer edge of their hip bone for 30 seconds.",
-          "Slide your hands under their clothing to rest on their bare lower back.",
           "Gently trace their hip curvature with warm palms.",
           "Kiss every vertebra on their lower spine down to their waistline."
         ],
@@ -176,75 +123,46 @@ const challengeDatabase = {
          "Spend 60 seconds exploring their thighs with warm touch.",
           "Slowly slide your hand up under their shorts/skirt onto their bare thigh.",
           "Kiss high up on their thigh, inching closer to their center.",
-          "Kiss slowly up the outer thighs toward the hips, wetting the skin.",
         "Run your tongue along the soft skin just above the knees.",
         "Nibble and suck the sensitive spots on the outer thighs.",
-        "Trace their thighs with open-mouthed, lingering kisses.",
-        "Grip their thighs and press deep, wet kisses into the skin.",
-          "Run your hand up their thigh, stopping just before their hip.",
-          "Kiss the sensitive skin on their inner knee for 30 seconds.",
-          "Use your fingernails to lightly scratch up their outer thighs.",
-          "Massage their thighs firmly while using warm mouth contact on their knees."
+          "Use your fingernails to lightly scratch up their outer thighs."
         ],
         feet_calves: [
          "Spend 60 seconds massaging their arches and toes with focused attention.",
           "Kiss up their calf from ankle to knee line.",
-          "Kiss along their ankle bone and lower calf.",
-        "Run your tongue up the back of their calf in one long stroke.",
         "Nibble and suck the soft skin behind their knees and down the calves.",
         "Trace their calves with open-mouthed kisses.",
-          "Gently scratch up their calves with your fingernails.",
-          "Warm their ankles and calves with warm breath and light licks."
+          "Gently scratch up their calves with your fingernails."
         ],
         scalp_hair: [
          "Spend 60 seconds alternating between scalp scratches and deep neck kisses.",
           "Grip the back of their hair softly to angle their head for a long kiss.",
         "Lightly scratch their scalp with your fingernails for 30 seconds.",
           "Run your hands through their hair while kissing their neck.",
-          "Gently pull them closer to you by the back of their hair.",
-          "Tug their hair lightly while kissing their neck and breathing on their ear.",
-        "Pull their head back gently by the hair and kiss their throat deeply.",
         "Weave your fingers into their hair and hold them close while kissing.",
-          "Trace the hairline at the nape of their neck with your lips.",
           "Use both hands to deeply stroke through their hair, maintaining eye contact."
         ],
-        chest_torso: [
+        chest: [
          "Spend 60 seconds massaging their chest and nipples with soft touch and kisses.",
           "Tease sensitive spots on their chest and nipples through light touches and nibbles.",
-          "Use warm breath and soft touches across their chest for 30 seconds.",
           "Kiss down the center line of their torso to their stomach.",
-          "Gently caress their chest over clothing.",
-          "Kiss and lick slowly across their chest and collarbones, wetting the skin.",
-        "Run your tongue down the center of their torso in one long stroke.",
-        "Nibble and suck around their nipples or most sensitive chest spots.",
         "Trace their ribs with open-mouthed, lingering kisses.",
-        "Grip their sides and press deep, wet kisses into their chest.",
-          "Lick softly along their collarbone down to their chest line.",
           "Use a combination of warm tongue flicks and cool breath on their chest and nipples."
         ],
         inner_thighs: [
          "Spend 60 seconds exploring their bare inner thighs with warm touch.",
         "Run your bare hand high up their inner thigh, stopping just before their core.",
-        "Kiss slowly up both inner thighs, alternating sides and wetting the skin.",
-        "Run your tongue along the softest, most sensitive parts of their inner thighs.",
         "Nibble and suck the high inner thighs, getting very close.",
-        "Trace their inner thighs with open-mouthed, lingering kisses.",
-        "Grip their thighs and press deep, wet kisses close to the center.",
-          "Kiss the sensitive skin high up on their inner thigh for 30 seconds.",
           "Use your fingernails to lightly scratch the sensitive skin of their inner thighs.",
           "Slowly slide your hands under their clothing to massage high on their inner thighs.",
-          "Kiss high up on their inner thigh, inching closer to their center but not touching it.",
           "Trace patterns on their inner thighs with your tongue for 1 minute."
         ],
         intimate: [
             "Give exactly 1 minute of oral sex, focusing entirely on their pleasure.",
-          "Use your fingers to stimulate their most sensitive intimate spots gently for 60 seconds.",
           "Straddle their face or lap and let them stimulate you for 1 minute.",
           "Use a warm tongue to tease the very edges of their genitals.",
           "Trace slow, teasing circles with your fingertips over and around their most sensitive areas.",
-        "Kiss their lower belly and the edges of the intimate zone.",
         "Stroke them lightly and teasingly for 40 seconds, building without full stimulation.",
-        "Hold their hips and press soft, lingering, wet kisses just above and beside the intimate area.",
           "Massage their clitoris or penis shaft slowly with warm lotion or saliva for 30 seconds.",
           "Perform 45 seconds of soft oral teasing without going all the way in.",
           "Trace the outline of their genitals with your tongue and light finger touches.",
@@ -343,11 +261,11 @@ const challengeDatabase = {
           "Hold the back of their head firmly in place while you pleasure them.",
           "Maintain a firm grip on their hair while teasing their body for 1 minute."
         ],
-        chest_torso: [
+        chest: [
          "Spend 60 seconds delivering intense mouth and hand attention to their chest/nipples.",
           "Remove upper clothing and explore their torso area completely for 1 minute.",
           "Gently bite and kiss sensitive areas on their chest for 45 seconds.",
-          "Expose their torso and use your lips and tongue continuously.",
+          "Expose their chest and use your lips and tongue continuously.",
           "Suck and bite their nipples while grinding against them.",
         "Lick and suck their nipples or chest while stroking lower.",
         "Hold their torso tightly and thrust against them while kissing hard.",

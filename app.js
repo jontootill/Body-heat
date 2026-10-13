@@ -62,11 +62,17 @@ function getHeatClass(h) {
 }
 
 function updateUI() {
-  // Heat badges
+  // Band + Number badges
   const p1Badge = document.getElementById("p1-heat");
   const p2Badge = document.getElementById("p2-heat");
-  p1Badge.textContent = heatP1;
-  p2Badge.textContent = heatP2;
+
+  const band1 = getBand(heatP1);
+  const band2 = getBand(heatP2);
+
+  // Shows e.g. "Romantic 3" or "Sensual 6"
+  p1Badge.textContent = `${band1.charAt(0).toUpperCase() + band1.slice(1)} ${heatP1}`;
+  p2Badge.textContent = `${band2.charAt(0).toUpperCase() + band2.slice(1)} ${heatP2}`;
+
   p1Badge.className = "heat-badge " + getHeatClass(heatP1);
   p2Badge.className = "heat-badge " + getHeatClass(heatP2);
 
@@ -76,7 +82,8 @@ function updateUI() {
 
   // Turn indicator text
   const name = currentTurn === "p1" ? player1 : player2;
-  document.getElementById("turn-indicator").textContent = `${name}'s turn – choose a body part for yourself`;
+  document.getElementById("turn-indicator").textContent =
+    `${name}'s turn – choose a body part`;
 }
 
 function renderBodyParts() {
@@ -110,7 +117,7 @@ function showPhase(phase) {
 // GAME FLOW
 // ======================
 function selectPart(part) {
-  selectedBy = currentTurn;               // the person whose turn it is receives the challenge
+  selectedBy = currentTurn;
   currentPart = part;
 
   const receiverHeat = selectedBy === "p1" ? heatP1 : heatP2;
@@ -164,12 +171,11 @@ function chooseChallenge(index) {
 }
 
 function finishTurn(delta) {
-  // Apply heat change only to the receiver
   if (selectedBy === "p1") {
     const oldBand = getBand(heatP1);
     heatP1 = Math.max(1, Math.min(10, heatP1 + delta));
     if (getBand(heatP1) !== oldBand) {
-      usedPartsP1.clear();          // reset used parts when band changes
+      usedPartsP1.clear();
     }
   } else {
     const oldBand = getBand(heatP2);
@@ -208,6 +214,7 @@ document.getElementById("start-btn").addEventListener("click", () => {
   document.getElementById("p1-display").textContent = player1;
   document.getElementById("p2-display").textContent = player2;
 
+  // Hide setup, show game
   document.getElementById("setup-screen").classList.add("hidden");
   document.getElementById("game-screen").classList.remove("hidden");
 
@@ -217,5 +224,12 @@ document.getElementById("start-btn").addEventListener("click", () => {
   showPhase("select");
 });
 
-document.getElementById("complete-btn").addEventListener("click", completeChallenge);
-document.getElementById("skip-btn").addEventListener("click", skipChallenge);
+// Safe event delegation for Complete / Skip buttons
+document.addEventListener("click", function (e) {
+  if (e.target && e.target.id === "complete-btn") {
+    completeChallenge();
+  }
+  if (e.target && e.target.id === "skip-btn") {
+    skipChallenge();
+  }
+});
